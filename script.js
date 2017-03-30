@@ -64,4 +64,8 @@ function onClick(event) {
         y: event.pageY,
         time: new Date().getTime()
     });
+
+    if(document.getElementById("clickme") != null) {
+        document.getElementById("clickme").outerHTML = "";
+    }
 }
